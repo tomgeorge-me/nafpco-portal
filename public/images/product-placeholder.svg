@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#e8dfc0"/>
+  <g fill="none" stroke="#c98f1f" stroke-width="1.5" opacity="0.6">
+    <circle cx="200" cy="150" r="60"/>
+    <path d="M200 90 L200 210 M140 150 L260 150" />
+  </g>
+  <text x="200" y="255" font-family="monospace" font-size="12" fill="#55503f" text-anchor="middle" letter-spacing="1">PHOTO COMING SOON</text>
+</svg>
