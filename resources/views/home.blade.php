@@ -21,11 +21,11 @@
         </div>
 
         <div class="ledger-strip">
-            <div class="container">
-                @forelse (config('company.product_categories') as $slug => $label)
+            <div class="container full">
+                @forelse ($categoryCounts as $label => $catCount)
                     <div class="ledger-item">
-                        <span class="num">{{ $categoryCounts[$slug] ?? 0 }}</span>
-                        <span class="label">{{ $label }} listed</span>
+                        <span class="num">{{ $catCount }}</span>
+                        <span class="label">{{ \Illuminate\Support\Str::of($label)->plural()->title() }}</span>
                     </div>
                 @endforeach
                 <div class="ledger-item">

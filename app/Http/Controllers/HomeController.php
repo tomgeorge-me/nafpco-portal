@@ -21,6 +21,8 @@ class HomeController extends Controller
             ->groupBy('category')
             ->pluck('total', 'category');
 
+        //dd($categoryCounts);
+
         return view('home', [
             'featured' => $featured,
             'categoryCounts' => $categoryCounts,
