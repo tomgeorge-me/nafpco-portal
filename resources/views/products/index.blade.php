@@ -19,9 +19,9 @@
         <div class="container">
             <div class="pillbar">
                 <a href="{{ route('products.index') }}" class="pill {{ $activeCategory === 'all' ? 'is-active' : '' }}">All</a>
-                @foreach ($categories as $slug => $label)
-                    <a href="{{ route('products.index', ['category' => $slug]) }}"
-                       class="pill {{ $activeCategory === $slug ? 'is-active' : '' }}">{{ $label }}</a>
+                @foreach ($categories as $categoryName)
+                    <a href="{{ route('products.index', ['category' => $categoryName]) }}"
+                       class="pill {{ $activeCategory === $categoryName ? 'is-active' : '' }}">{{ $categoryName }}</a>
                 @endforeach
             </div>
 

@@ -3,8 +3,8 @@
         <a href="{{ route('home') }}" class="brand">
             <span class="brand-mark">NA</span>
             <span>
-                {{ config('company.short_name') }}
-                <small>Est. 2016 &middot; {{ config('company.address.district') }}, Kerala</small>
+                {{ config('company.short_name') }} - {{ strtoupper(config('company.full_name')) }}
+                <small>Est. {{ config('company.incorporated_year') }} &middot; {{ config('company.address.district') }}, Kerala</small>
             </span>
         </a>
         <nav>

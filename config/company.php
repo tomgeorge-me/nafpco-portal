@@ -3,9 +3,11 @@
 return [
     'legal_name' => 'Neyyassery Agro Food Producer Company Limited',
     'short_name' => 'NAFPCO',
+    'full_name' => 'Neyyassery Agro Food Producer Company',
 
     'cin' => 'U01100KL2016PTC040440',
     'incorporated_on' => '2016-03-24',
+    'incorporated_year'=> '2016',
     'status' => 'Active',
     'entity_type' => 'Private Farmer Producer Company',
 

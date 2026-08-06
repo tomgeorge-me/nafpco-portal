@@ -6,7 +6,7 @@
         <span class="card-tag">{{ $product->category_label }}</span>
         <h3>{{ $product->name }}</h3>
         @if ($product->description)
-            <p>{{ \Illuminate\Support\Str::limit($product->description, 90) }}</p>
+            <p>{{ \Illuminate\Support\Str::limit($product->description, 50) }}</p>
         @endif
         <span class="more">Enquire for price &rarr;</span>
     </div>

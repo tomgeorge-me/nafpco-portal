@@ -246,8 +246,9 @@ section.on-parchment-2 { background: var(--parchment-2); }
   display: grid;
   gap: 28px;
 }
-.grid--3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.grid--2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid--3 { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.grid--2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.grid--product-show { grid-template-columns: 1fr 2fr; }
 
 /* ---------- Cards ---------- */
 .card {
@@ -382,6 +383,7 @@ section.on-parchment-2 { background: var(--parchment-2); }
   .nav-links { gap: 16px; flex-wrap: wrap; }
   .ledger-item { border-right: none; border-bottom: 1px solid var(--canopy-line); }
   section { padding-block: 48px; }
+  .grid--product-show { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
